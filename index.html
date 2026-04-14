@@ -1,13 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <link rel="icon" href="images/Logo.svg">
+  <link rel="stylesheet" href="menu.css">
+  <title>Archivos</title>
 </head>
 <body>
-    <a href="https://juego-limones-six.vercel.app/" target="_blank"> Juego Limones</a>
-    <a href="https://juego-limones-six.vercel.app/" target="_blank"> Juego Cazando</a>
-    
+
+<div class="autor-box">
+  <img src="images/galo.jpeg" alt="Autor">
+  <h2>Autor: Galo Cisneros</h2>
+</div>
+
+<div class="container">
+  <aside class="sidebar">
+    <h3>✦ Menu</h3>
+
+    <ul>
+      <!-- FUNDAMENTOS -->
+      <li class="menu-title" data-info="Aquí aprenderás lógica básica, variables y tus primeros proyectos como juegos simples.">📘 Fundamentos</li>
+      <ul class="submenu">
+        <li class="submenu-item" data-info="Juego donde debes atrapar objetos que estan en la pantalla. Practicas lógica, eventos y renderizado en canvas.">
+        <a href="https://juego-cazando.vercel.app/">🎮 Juego Cazando</a></li>
+        <li class="submenu-item" data-info="Juego interactivo de reflejos donde debes atrapar limones. Trabajas animaciones y colisiones.">
+        <a href="https://juego-limones-six.vercel.app/">🍋 Juego Limón</a></li>
+      </ul>
+
+      <!-- OTROS -->
+      <li class="menu-title" data-info="Conceptos matemáticos clave para programación y resolución de problemas.">📐 Matemática 1</li>
+      <ul class="submenu">
+        <li class="disabled">Próximamente</li>
+      </ul>
+
+      <li class="menu-title" data-info="Aprenderás a programar desde cero con ejercicios prácticos.">💻 Programación</li>
+      <ul class="submenu">
+        <li class="disabled">Próximamente</li>
+      </ul>
+
+      <li class="menu-title" data-info="Desarrollo de interfaces web con HTML, CSS y JavaScript.">🌐 Frontend</li>
+      <ul class="submenu">
+        <li class="disabled">Próximamente</li>
+      </ul>
+
+      <li class="menu-title" data-info="Mejora tu pensamiento lógico y resolución de problemas.">🧠 Lógica</li>
+      <ul class="submenu">
+        <li class="disabled">Próximamente</li>
+      </ul>
+
+      <li class="menu-title" data-info="Introducción a herramientas como Git y automatización.">⚙️ DevOps</li>
+      <ul class="submenu">
+        <li class="disabled">Próximamente</li>
+      </ul>
+    </ul>
+
+  </aside>
+</div>
+
+<script>
+  const titles = document.querySelectorAll(".menu-title");
+
+  titles.forEach(title => {
+    title.addEventListener("click", () => {
+      const submenu = title.nextElementSibling;
+      submenu.classList.toggle("open");
+    });
+  });
+</script>
+
 </body>
 </html>

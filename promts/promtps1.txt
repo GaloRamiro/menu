@@ -1,0 +1,61 @@
+1. Prompt base (estructura del menú)
+Actúa como un diseñador UI/UX experto. 
+Crea una interfaz de menú tipo sidebar centrado en pantalla con diseño moderno minimalista. 
+El menú debe tener secciones jerárquicas (categorías principales y submenús). 
+Los submenús deben poder expandirse y contraerse al hacer clic.
+
+No modifiques la estructura HTML base si ya existe, pero mejora completamente el CSS.
+
+El diseño debe ser limpio, con buen espaciado, tipografía moderna y jerarquía visual clara.
+
+2. Prompt de estilo visual (IMPORTANTE)
+
+Diseña la interfaz con estilo moderno tipo dashboard (similar a Notion o apps SaaS).
+
+Usa:
+- Colores neutros (gris claro, blanco suave)
+- Bordes redondeados (border-radius alto)
+- Sombras suaves (box-shadow sutil)
+- Espaciado consistente (padding y margin equilibrados)
+
+Evita colores saturados o estilos antiguos.
+El resultado debe verse profesional, limpio y minimalista.
+
+
+3. Prompt efecto vidrio (glassmorphism)
+
+Aplica efecto glassmorphism al contenedor principal.
+
+Usa:
+- background: rgba(...) con transparencia
+- backdrop-filter: blur()
+- bordes suaves
+- sombra ligera
+
+Debe verse como una tarjeta de vidrio flotando sobre un fondo degradado.
+
+4. Prompt interacción (menú desplegable)
+
+Implementa interacción con JavaScript para que los menús principales sean desplegables.
+
+Requisitos:
+- Al hacer clic en una categoría, se despliega su contenido
+- Animación suave usando max-height y transition
+- Solo un menú abierto a la vez (opcional avanzado)
+- Código limpio y reutilizable
+
+No usar librerías externas.
+
+
+
+5. Prompt para estados “vacíos”
+
+
+Diseña estados deshabilitados para secciones sin contenido.
+
+Requisitos:
+- Opacidad reducida
+- Cursor: not-allowed
+- Texto "Próximamente"
+
+Debe comunicar claramente que el contenido aún no está disponible sin romper la estética.
