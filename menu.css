@@ -75,20 +75,21 @@ body {
 .submenu {
   display: none;
   padding-left: 15px;
-  padding-left: 15px;
+ 
 }
 
 /* CUANDO SE ABRE */
 .submenu.open {
     display: block;
-  max-height: 200px;
+ 
 }
 
 /* ITEMS */
 .submenu li {
-  padding: 8px;
+  padding: 10px;
   border-radius: 8px;
-  margin: 3px 0;
+  margin: 6px 0;
+    line-height: 1.4
 }
 
 /* LINKS */
